@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \****************************/
 /***/ ((module) => {
 
-eval("\nconst boxNotMarked = (box) => box.id === 'unmarked';\n\nmodule.exports = boxNotMarked;\n\n\n//# sourceURL=webpack://todo-list/./src/task-status.js?");
+eval("const boxNotMarked = (box) => box.id === 'unmarked';\n\nmodule.exports = boxNotMarked;\n\n\n//# sourceURL=webpack://todo-list/./src/task-status.js?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("\nconst boxNotMarked = (box) => box.id === 'unmarked';\n\nmodule.exports =
   \******************************/
 /***/ ((module) => {
 
-eval("/* eslint-disable radix */\n\nclass Crud {\n  // Method to add a new task to tasklist.\n  static addTask(list, input) {\n    if (input !== '') {\n      const task = {\n        description: input,\n        completed: false,\n        index: list.length,\n      };\n      list.push(task);\n    }\n  }\n\n  // Method to remove a task from tasklist.\n  static removeTask(list, i) {\n    if (i >= 0) {\n      const lastitem = list.length - 1;\n      if (i === lastitem) {\n        list.splice(i, 1);\n      } else {\n        list.splice(i, 1);\n        let j = parseInt(i);\n        for (j; j < list.length; j += 1) {\n          list[j].index -= 1;\n        }\n      }\n    }\n  }\n\n  // Method to update task description.\n  static updateDescription(list, index, input) {\n    list[index].description = input;\n  }\n}\n\nmodule.exports = Crud;\n\n\n//# sourceURL=webpack://todo-list/./src/tasks-handler.js?");
+eval("class Crud {\n  // Method to add a new task to tasklist.\n  static addTask(list, input) {\n    if (input !== '') {\n      const task = {\n        description: input,\n        completed: false,\n        index: list.length,\n      };\n      list.push(task);\n    }\n  }\n\n  // Method to remove a task from tasklist.\n  static removeTask(list, i) {\n    if (i >= 0) {\n      const lastitem = list.length - 1;\n      if (i === lastitem) {\n        list.splice(i, 1);\n      } else {\n        list.splice(i, 1);\n        let j = parseInt(i, 10);\n        for (j; j < list.length; j += 1) {\n          list[j].index -= 1;\n        }\n      }\n    }\n  }\n\n  // Method to update task description.\n  static updateDescription(list, index, input) {\n    list[index].description = input;\n  }\n}\n\nmodule.exports = Crud;\n\n\n//# sourceURL=webpack://todo-list/./src/tasks-handler.js?");
 
 /***/ })
 

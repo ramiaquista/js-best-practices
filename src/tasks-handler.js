@@ -1,5 +1,3 @@
-/* eslint-disable radix */
-
 class Crud {
   // Method to add a new task to tasklist.
   static addTask(list, input) {
@@ -21,7 +19,7 @@ class Crud {
         list.splice(i, 1);
       } else {
         list.splice(i, 1);
-        let j = parseInt(i);
+        let j = parseInt(i, 10);
         for (j; j < list.length; j += 1) {
           list[j].index -= 1;
         }
