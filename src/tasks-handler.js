@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 /* eslint-disable radix */
 
 class Crud {
@@ -23,7 +22,7 @@ class Crud {
       } else {
         list.splice(i, 1);
         let j = parseInt(i);
-        for (j; j < list.length; j++) {
+        for (j; j < list.length; j += 1) {
           list[j].index -= 1;
         }
       }

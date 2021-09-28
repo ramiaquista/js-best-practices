@@ -8,6 +8,10 @@ body {
   background-color: #f1f2f5;
 }
 
+.border-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 #todo-list {
   box-sizing: border-box;
   border-radius: 3px;
@@ -26,7 +30,6 @@ body {
   position: relative;
   height: 50px;
   background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .todo-title h2 {
@@ -51,7 +54,6 @@ form {
   display: flex;
   align-items: baseline;
   background-color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-right: 7px;
 }
 
@@ -83,7 +85,6 @@ form {
   align-items: baseline;
   background-color: #fff;
   font-size: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   font-weight: 500;
   box-sizing: content-box;
   padding: 12px;

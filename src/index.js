@@ -37,6 +37,7 @@ function taskListDisplayed() {
     checkBox.classList.add('checkBox');
     checkBox.id = 'unmarked';
     li.classList.add('task');
+    li.classList.add('border-box');
     li.id = index;
     icon.classList.add('fas');
     icon.classList.add('fa-ellipsis-v');
@@ -124,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const reloadButton = document.createElement('button');
 
   divUl.classList.add('todo-title');
+  divUl.classList.add('border-box');
   h2.innerHTML = "Today's To Do";
   reloadButton.classList.add('fas');
   reloadButton.classList.add('fa-sync-alt');
@@ -140,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
   input.id = 'add-item';
   addIcon.classList.add('fas');
   addIcon.classList.add('fa-long-arrow-alt-left');
+  form.classList.add('border-box');
 
   form.appendChild(input);
   form.appendChild(addIcon);
