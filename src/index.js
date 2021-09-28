@@ -1,7 +1,7 @@
 // import _ from 'lodash';
 /* eslint-disable prefer-destructuring */
 import './style.css';
-import Status from './task-status';
+import boxNotMarked from './task-status';
 import Crud from './tasks-handler';
 
 let toDoTasks = [];
@@ -92,7 +92,7 @@ function taskListDisplayed() {
     }
 
     checkBox.addEventListener('change', () => {
-      if (Status.boxNotMarked(checkBox)) {
+      if (boxNotMarked(checkBox)) {
         labelDes.classList.add('checked');
         checkBox.id = 'marked';
         toDoTasks[index].completed = true;
