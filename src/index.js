@@ -1,5 +1,3 @@
-// import _ from 'lodash';
-/* eslint-disable prefer-destructuring */
 import './style.css';
 import boxNotMarked from './task-status';
 import Crud from './tasks-handler';
